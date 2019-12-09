@@ -11,15 +11,26 @@ import SwiftUI
 struct ContentView: View {
    
     var body: some View {
-        VStack {
-            Image("wine_barrel")
-            .edgesIgnoringSafeArea(.top)
-            .frame(height: 200)
-            .scaledToFit()
-            .clipped()
-            
-        Spacer()
+        NavigationView {
+            VStack {
+                Image("wine_barrel").resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.top)
+                    .frame(height: 150)
+                    //            .scaledToFill()
+                    .clipped()
+                
+                Spacer()
+            }
+            .navigationBarItems(trailing: HStack {
+                Button(action: {}) {
+                    Image(systemName: "minus.square.fill")
+                        .font(.largeTitle)
+                }.foregroundColor(.blue)
+            })
+            .navigationBarTitle("Search")
         }
+        
     }
 }
 
