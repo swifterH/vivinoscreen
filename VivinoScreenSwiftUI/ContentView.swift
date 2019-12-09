@@ -22,13 +22,19 @@ struct ContentView: View {
                 
                 Spacer()
             }
+            
             .navigationBarItems(trailing: HStack {
                 Button(action: {}) {
-                    Image(systemName: "minus.square.fill")
-                        .font(.largeTitle)
+                    Image(systemName: "cart.fill")
+                        //.font(.largeTitle)
+                }.foregroundColor(.blue)
+                Button(action: {}) {
+                    Image(systemName: "bell.fill")
+                       // .font(.largeTitle)
                 }.foregroundColor(.blue)
             })
-            .navigationBarTitle("Search")
+                .navigationBarTitle("Search")
+            
         }
         
     }
