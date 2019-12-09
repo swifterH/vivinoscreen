@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+   
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Image("wine_barrel")
+            .edgesIgnoringSafeArea(.top)
+            .frame(height: 200)
+            .scaledToFit()
+            .clipped()
+            
+        Spacer()
+        }
     }
 }
 
