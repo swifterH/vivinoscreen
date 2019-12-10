@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
    
     var body: some View {
+        TabView {
         NavigationView {
             VStack {
                 Image("wine_barrel").resizable()
@@ -32,7 +33,7 @@ struct ContentView: View {
                     HStack {
                         Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
                         Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
-                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                        
                     }
                     HStack {
                                         Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
@@ -40,7 +41,7 @@ struct ContentView: View {
                                         Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
                                     }
                     HStack {
-                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                        
                                         Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
                                         Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
                                     }
@@ -60,8 +61,8 @@ struct ContentView: View {
             })
                 .navigationBarTitle("Search")
             
+            }
         }
-        
     }
 }
 
