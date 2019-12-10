@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var txt = ""
     var body: some View {
         
+    
         TabView {
             NavigationView {
                 
@@ -72,12 +73,14 @@ struct ContentView: View {
                 .navigationBarItems(trailing: HStack {
                     Button(action: {}) {
                         Image(systemName: "cart.fill")
-                        //.font(.largeTitle)
-                    }.foregroundColor(.blue)
+                            .font(.system(size: 24))
+                    }.foregroundColor(Color.wineColor)
+                    
                     Button(action: {}) {
                         Image(systemName: "bell.fill")
-                        // .font(.largeTitle)
-                    }.foregroundColor(.blue)
+                            .font(.system(size: 24))
+                    }.foregroundColor(Color.wineColor)
+                        
                 })
                     .navigationBarTitle("Search")
                 
