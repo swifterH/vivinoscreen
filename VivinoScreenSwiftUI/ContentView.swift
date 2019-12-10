@@ -26,29 +26,44 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    SearchView(txt: $txt).frame(width: 400, height: 60, alignment: .leading)
+                    SearchView(txt: $txt).frame(width: 360, height: 60, alignment: .leading)
+                    .offset(x: 0, y: -40)
+                    .padding(.bottom, -40)
                     
                     ScrollView {
                         HStack {
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
+                            .padding()
+                            .border(Color.green, width: 2)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
+                            .padding()
+                            .border(Color.green, width: 2)
                             
                         }
                         HStack {
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
+                            .padding()
+                            .border(Color.green, width: 2)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
+                            .padding()
+                            .border(Color.green, width: 2)
                             
                         }
-                        HStack {
+                        HStack { Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
+                            .padding()
+                            .border(Color.green, width: 2)
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            .padding()
+                            .border(Color.green, width: 2)
                         }
                         HStack {
                             
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            .padding()
+                            .border(Color.green, width: 4)
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            .padding()
+                            .border(Color.green, width: 4)
                         }
                         
                     }
@@ -102,3 +117,5 @@ struct SearchView : View {
         }
     }
 }
+
+
