@@ -26,7 +26,7 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    SearchView(txt: $txt)
+                    SearchView(txt: $txt).frame(width: 400, height: 60, alignment: .leading)
                     
                     ScrollView {
                         HStack {
@@ -88,7 +88,7 @@ struct SearchView : View {
                 HStack {
                     TextField("Search", text: $txt).padding(.trailing, 75)
                 }.padding()
-                .background(Color.white)
+                .background(Color.green)
                 
                 HStack {
                     Spacer()
