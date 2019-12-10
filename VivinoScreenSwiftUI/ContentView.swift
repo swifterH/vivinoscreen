@@ -21,8 +21,33 @@ struct ContentView: View {
                     .clipped()
                 
                 Spacer()
+                
+                ScrollView {
+                    HStack {
+                       Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                        
+                    }
+                    HStack {
+                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                    }
+                    HStack {
+                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                    }
+                    HStack {
+                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                        Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                                    }
+                    
+                }
             }
-            
+                
             .navigationBarItems(trailing: HStack {
                 Button(action: {}) {
                     Image(systemName: "cart.fill")
