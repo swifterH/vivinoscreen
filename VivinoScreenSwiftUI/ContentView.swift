@@ -53,18 +53,18 @@ struct ContentView: View {
                         HStack { Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
                             .padding()
                             .border(Color.green, width: 2)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
                             .padding()
                             .border(Color.green, width: 2)
                         }
                         HStack {
                             
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
                             .padding()
-                            .border(Color.green, width: 4)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 150, height: 150)
+                            .border(Color.green, width: 2)
+                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
                             .padding()
-                            .border(Color.green, width: 4)
+                            .border(Color.green, width: 2)
                         }
                         
                     }
@@ -107,6 +107,7 @@ struct SearchView : View {
                     TextField("Search", text: $txt).padding(.trailing, 75)
                 }.padding()
                 .background(Color.green)
+               
                 
                 HStack {
                     Spacer()
