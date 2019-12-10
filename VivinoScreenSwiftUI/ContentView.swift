@@ -107,7 +107,7 @@ struct SearchView : View {
                     TextField("Search", text: $txt).padding(.trailing, 75)
                 }.padding()
                 .background(Color.green)
-               
+                    .cornerRadius(28)
                 
                 HStack {
                     Spacer()
