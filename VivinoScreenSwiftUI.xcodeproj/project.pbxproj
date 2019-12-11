@@ -15,6 +15,7 @@
 		C8A3CEDB239E437800EBCC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A3CED9239E437800EBCC7B /* LaunchScreen.storyboard */; };
 		C8A3CF03239FF81100EBCC7B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CF02239FF81100EBCC7B /* Data.swift */; };
 		C8A3CF0523A00F6D00EBCC7B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CF0423A00F6D00EBCC7B /* ColorExtension.swift */; };
+		C8B6D81A23A1A5300063A736 /* RecentsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6D81923A1A5300063A736 /* RecentsRow.swift */; };
 		C8EE7A9123A10736002C789D /* NavigationViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */; };
 		C8EE7A9323A130A1002C789D /* WineZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE7A9223A130A1002C789D /* WineZStack.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		C8A3CEDC239E437800EBCC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8A3CF02239FF81100EBCC7B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C8A3CF0423A00F6D00EBCC7B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C8B6D81923A1A5300063A736 /* RecentsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsRow.swift; sourceTree = "<group>"; };
 		C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewExtension.swift; sourceTree = "<group>"; };
 		C8EE7A9223A130A1002C789D /* WineZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineZStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */,
 				C8EE7A9223A130A1002C789D /* WineZStack.swift */,
 				C8A3CF02239FF81100EBCC7B /* Data.swift */,
+				C8B6D81923A1A5300063A736 /* RecentsRow.swift */,
 				C8A3CED4239E437800EBCC7B /* Assets.xcassets */,
 				C8A3CED9239E437800EBCC7B /* LaunchScreen.storyboard */,
 				C8A3CEDC239E437800EBCC7B /* Info.plist */,
@@ -165,6 +168,7 @@
 				C8EE7A9323A130A1002C789D /* WineZStack.swift in Sources */,
 				C8A3CF03239FF81100EBCC7B /* Data.swift in Sources */,
 				C8A3CF0523A00F6D00EBCC7B /* ColorExtension.swift in Sources */,
+				C8B6D81A23A1A5300063A736 /* RecentsRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

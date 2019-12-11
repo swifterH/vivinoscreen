@@ -77,21 +77,34 @@ struct ContentView: View {
                         }
                         
                         VStack {
-                            Text("One").padding()
-                            Text("Two").padding()
+                            Text("More filters").font(.custom("Helvetica", size: 16))
+                            .fontWeight(.regular).foregroundColor(Color("wineColor")).padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                                .font(.subheadline)
                             
-                            Rectangle().frame(width: 330, height: 20, alignment: .leading)
-                                .foregroundColor(Color.gray)
+                            Text("Country, grape, vintage, etc.")
+                            .font(.custom("Helvetica", size: 12))
+                                .fontWeight(.regular).foregroundColor(Color("darkMaize"))
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
                             
-                            Spacer()
+                            Rectangle().frame(width: 380, height: 20, alignment: .leading)
+                                .foregroundColor(Color("lightMaize"))
+                                .offset(x: 0, y: -5)
                             
-                            Text("Recent searches").padding()
-                            Text("").padding()
-                            Text("").padding()
-                            Text("").padding()
+                            VStack() {
+                                Text("Recent searches") .font(.custom("Helvetica", size: 20))
+                                .fontWeight(.regular).foregroundColor(Color("selectedTitle"))
+                                    .multilineTextAlignment(.leading)
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
+                            }
+                            RecentsRow()
+                            RecentsRow()
+                            RecentsRow()
+//                            Text("").padding()
+//                            Text("").padding()
+//                            Text("").padding()
                             
-                            Rectangle().frame(width: 330, height: 200, alignment: .leading)
-                            .foregroundColor(Color.gray)
+                            Rectangle().frame(width: 380, height: 100, alignment: .leading)
+                            .foregroundColor(Color("lightMaize"))
                         }
                         
                     }
