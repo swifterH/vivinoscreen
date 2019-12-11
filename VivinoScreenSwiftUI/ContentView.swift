@@ -18,7 +18,8 @@ struct ContentView: View {
             NavigationView {
                 
                 VStack {
-                    Image("wine_barrel").resizable()
+                    Image("barrels").resizable()
+                        .blendMode(.plusDarker)
                         .aspectRatio(contentMode: .fill)
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 140)
@@ -64,15 +65,13 @@ struct ContentView: View {
                         }
                         HStack {
                             
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                                .padding()
-                                .border(Color.green, width: 2)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                                .padding()
-                                .border(Color.green, width: 2)
+                            WineZStack()
+                            WineZStack()
                         }
                         
                     }
+                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)) //this is making the top image wider
+                    
                 }.background(Color("lightBackground"))
                     .edgesIgnoringSafeArea(.all)
                     
