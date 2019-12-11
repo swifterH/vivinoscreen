@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var txt = ""
     var body: some View {
         
-    
+        
         TabView {
             NavigationView {
                 
@@ -28,59 +28,59 @@ struct ContentView: View {
                     Spacer()
                     
                     SearchView(txt: $txt, data: data).frame(width: 360, height: 60, alignment: .leading)
-                    .offset(x: 0, y: -40)
-                    .padding(.bottom, -40)
-                    .zIndex(1)
+                        .offset(x: 0, y: -40)
+                        .padding(.bottom, -40)
+                        .zIndex(1)
                     
                     ScrollView {
                         HStack {
                             ZStack {
                                 Image("winePic").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 190, height: 190)
-                                .clipped()
-                                .blendMode(.screen)
-                                //.padding()
-                                .border(Color.green, width: 2)
+                                    .clipped()
+                                    .blendMode(.screen)
+                                    //.padding()
+                                    .border(Color.green, width: 2)
                                 
                                 Image("wineIcon").renderingMode(.template)
                                     .resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 60, height: 60)
                                     .foregroundColor(Color.white)
-
+                                
                                 //.padding()
                                 
                             }
                             
-//                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-//                            .padding()
-//                            .border(Color.green, width: 2)
+                            //                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
+                            //                            .padding()
+                            //                            .border(Color.green, width: 2)
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
+                                .padding()
+                                .border(Color.green, width: 2)
                             
                         }
                         HStack {
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
+                                .padding()
+                                .border(Color.green, width: 2)
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
+                                .padding()
+                                .border(Color.green, width: 2)
                             
                         }
                         HStack { Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
                             .padding()
                             .border(Color.green, width: 2)
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
+                                .padding()
+                                .border(Color.green, width: 2)
                         }
                         HStack {
                             
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
+                                .padding()
+                                .border(Color.green, width: 2)
                             Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
+                                .padding()
+                                .border(Color.green, width: 2)
                         }
                         
                     }
@@ -91,14 +91,17 @@ struct ContentView: View {
                         Image(systemName: "cart.fill")
                             .font(.system(size: 24))
                     }.foregroundColor(Color.wineColor)
+                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 20))
                     
                     Button(action: {}) {
                         Image(systemName: "bell.fill")
                             .font(.system(size: 24))
                     }.foregroundColor(Color.wineColor)
-                        
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 10))
+                    
                 })
                     .navigationBarTitle("Search")
+                    .font(.custom("Helvetica", size: 16))// this modifies the searchbar text
                 
             }
         }
@@ -123,7 +126,7 @@ struct SearchView : View {
                 HStack {
                     TextField("Search", text: $txt).padding(.trailing, 75)
                 }.padding()
-                .background(Color.green)
+                    .background(Color.green)
                     .cornerRadius(28)
                 
                 HStack {
@@ -135,11 +138,11 @@ struct SearchView : View {
                     }.foregroundColor(.black)
                 }.padding()
             }
-//            List(self.data.filter{$0.lowercased().contains(self.txt.lowercased())}, id: \.self) { i in
-//                Text(i)
-//                
-//                
-//            }.frame(height: 60)
+            //            List(self.data.filter{$0.lowercased().contains(self.txt.lowercased())}, id: \.self) { i in
+            //                Text(i)
+            //
+            //
+            //            }.frame(height: 60)
             
             
             //Spacer()
