@@ -21,7 +21,7 @@ struct ContentView: View {
                     Image("wine_barrel").resizable()
                         .aspectRatio(contentMode: .fill)
                         .edgesIgnoringSafeArea(.top)
-                        .frame(height: 150)
+                        .frame(height: 140)
                         //            .scaledToFill()
                         .clipped()
                     
@@ -32,46 +32,35 @@ struct ContentView: View {
                         .padding(.bottom, -40)
                         .zIndex(1)
                     
+                    VStack {
+                        Text("Browse wines")
+                            .font(.custom("Helvetica", size: 16))
+                            .fontWeight(.semibold)
+                    
+                            //.foregroundColor(Color.init(white: 0.2))
+                        .foregroundColor(Color("selectedTitle"))
+                        .padding()
+                        
+                        
+                        
+                            
+                    }
+                    
                     ScrollView {
                         HStack {
-                            ZStack {
-                                Image("winePic").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 190, height: 190)
-                                    .clipped()
-                                    .blendMode(.screen)
-                                    //.padding()
-                                    .border(Color.green, width: 2)
-                                
-                                Image("wineIcon").renderingMode(.template)
-                                    .resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 60, height: 60)
-                                    .foregroundColor(Color.white)
-                                
-                                //.padding()
-                                
-                            }
+                            WineZStack()
+                            WineZStack()
                             
-                            //                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            //                            .padding()
-                            //                            .border(Color.green, width: 2)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                                .padding()
-                                .border(Color.green, width: 2)
                             
                         }
                         HStack {
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                                .padding()
-                                .border(Color.green, width: 2)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                                .padding()
-                                .border(Color.green, width: 2)
+                            WineZStack()
+                            WineZStack()
                             
                         }
-                        HStack { Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                            .padding()
-                            .border(Color.green, width: 2)
-                            Image("rocks").resizable().aspectRatio(contentMode: .fill).edgesIgnoringSafeArea(.top).frame(width: 160, height: 160)
-                                .padding()
-                                .border(Color.green, width: 2)
+                        HStack {
+                            WineZStack()
+                            WineZStack()
                         }
                         HStack {
                             
@@ -84,23 +73,24 @@ struct ContentView: View {
                         }
                         
                     }
-                }
+                }.background(Color("lightBackground"))
+                    .edgesIgnoringSafeArea(.all)
                     
                 .navigationBarItems(trailing: HStack {
                     Button(action: {}) {
                         Image(systemName: "cart.fill")
-                            .font(.system(size: 24))
-                    }.foregroundColor(Color.wineColor)
+                            .font(.system(size: 20))
+                    }.foregroundColor(Color.white)
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 20))
                     
                     Button(action: {}) {
                         Image(systemName: "bell.fill")
-                            .font(.system(size: 24))
-                    }.foregroundColor(Color.wineColor)
+                            .font(.system(size: 20))
+                    }.foregroundColor(Color.white)
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 10))
                     
                 })
-                    .navigationBarTitle("Search")
+                    .navigationBarTitle("", displayMode: .inline)
                     .font(.custom("Helvetica", size: 16))// this modifies the searchbar text
                 
             }
@@ -125,9 +115,13 @@ struct SearchView : View {
             ZStack {
                 HStack {
                     TextField("Search", text: $txt).padding(.trailing, 75)
+                    .frame(height: 10)
                 }.padding()
-                    .background(Color.green)
+//                    .background(Color.green)
+                     .background(Color.white)
                     .cornerRadius(28)
+                .shadow(radius: 5)
+                //.border(Color.red, width: 4)
                 
                 HStack {
                     Spacer()
@@ -151,4 +145,21 @@ struct SearchView : View {
     }
 }
 
-
+extension UINavigationController {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let standardAppearance = UINavigationBarAppearance()
+        standardAppearance.configureWithTransparentBackground()
+        
+        let scrollEdgeAppearance = UINavigationBarAppearance()
+        scrollEdgeAppearance.configureWithTransparentBackground()
+        
+        let compactAppearance = UINavigationBarAppearance()
+        compactAppearance.configureWithTransparentBackground()
+        
+        navigationBar.standardAppearance = standardAppearance
+        navigationBar.scrollEdgeAppearance = scrollEdgeAppearance
+        navigationBar.compactAppearance = compactAppearance
+    }
+}
