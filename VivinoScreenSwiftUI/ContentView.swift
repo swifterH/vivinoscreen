@@ -42,13 +42,17 @@ struct ContentView: View {
                         .padding()
                         
                         Picker(selection: $favoriteColor, label: Text("What is your favorite color?")) {
-                                       Text("Red").tag(0)
-                                       Text("Green").tag(1)
-                                       Text("Blue").tag(2)
+                                        Text("").tag(0)
+                                       Text("").tag(1)
+                                       Text("").tag(2)
                                    }.pickerStyle(SegmentedPickerStyle())
+                            .background(Color.white)
+                            .frame(width: 300, height: 10, alignment: .leading)
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+                        //.foreground(Color.wineColor)
 
                                    //Text("Value: \(favoriteColor)")
-                        
+                       
                             
                     }
                     
