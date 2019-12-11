@@ -85,10 +85,13 @@ struct ContentView: View {
                             
                             Spacer()
                             
+                            Text("Recent searches").padding()
                             Text("").padding()
                             Text("").padding()
                             Text("").padding()
-                            Text("").padding()
+                            
+                            Rectangle().frame(width: 330, height: 200, alignment: .leading)
+                            .foregroundColor(Color.gray)
                         }
                         
                     }
