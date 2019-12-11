@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State var txt = ""
+    @State private var favoriteColor = 0 //for the segmented bar view
+    
     var body: some View {
         
         
@@ -36,13 +38,16 @@ struct ContentView: View {
                     VStack {
                         Text("Browse wines")
                             .font(.custom("Helvetica", size: 16))
-                            .fontWeight(.semibold)
-                    
-                            //.foregroundColor(Color.init(white: 0.2))
-                        .foregroundColor(Color("selectedTitle"))
+                            .fontWeight(.semibold).foregroundColor(Color("selectedTitle"))
                         .padding()
                         
-                        
+                        Picker(selection: $favoriteColor, label: Text("What is your favorite color?")) {
+                                       Text("Red").tag(0)
+                                       Text("Green").tag(1)
+                                       Text("Blue").tag(2)
+                                   }.pickerStyle(SegmentedPickerStyle())
+
+                                   //Text("Value: \(favoriteColor)")
                         
                             
                     }
