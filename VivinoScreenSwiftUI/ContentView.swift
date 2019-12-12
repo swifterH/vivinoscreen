@@ -99,9 +99,12 @@ struct ContentView: View {
                             RecentsRow()
                             RecentsRow()
                             RecentsRow()
-//                            Text("").padding()
-//                            Text("").padding()
-//                            Text("").padding()
+                            
+                            HStack {
+                                Text("Show all").font(.custom("Helvetica", size: 12)).foregroundColor(Color.wineColor)
+                                    .fontWeight(.semibold)
+                                .padding()
+                            }.frame(width: 280, height: 30, alignment: .leading)
                             
                             Rectangle().frame(width: 380, height: 100, alignment: .leading)
                             .foregroundColor(Color("lightMaize"))

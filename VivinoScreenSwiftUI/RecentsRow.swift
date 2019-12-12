@@ -16,14 +16,23 @@ struct RecentsRow: View {
                 Text("10").font(.body)
                 }.foregroundColor(Color("darkMaize"))
             .frame(width: 68, height: 68, alignment: .center)
+            
             VStack {
                 Text("All wine types").foregroundColor(.black)
                     .fontWeight(.light)
                 Text("minPrice - MaxPrice").font(.footnote)
                 .foregroundColor(Color("selectedTitle"))
                 Text("Goes well with...").font(.footnote).foregroundColor(Color("selectedTitle"))
-            }.frame(width: 270, height: 60, alignment: .leading)
+            }.frame(width: 220, height: 60, alignment: .leading)
             .shadow(radius: 20)
+            
+            VStack {
+                Image(systemName: "chevron.right")
+                
+                .frame(width: 50, height: 68, alignment: .center)
+                .foregroundColor(Color("darkMaize"))
+                
+            }
                      
             
               } .frame(width:370, height: 70)
