@@ -137,21 +137,3 @@ struct SearchView : View {
     }
 }
 
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let standardAppearance = UINavigationBarAppearance()
-        standardAppearance.configureWithTransparentBackground()
-        
-        let scrollEdgeAppearance = UINavigationBarAppearance()
-        scrollEdgeAppearance.configureWithTransparentBackground()
-        
-        let compactAppearance = UINavigationBarAppearance()
-        compactAppearance.configureWithTransparentBackground()
-        
-        navigationBar.standardAppearance = standardAppearance
-        navigationBar.scrollEdgeAppearance = scrollEdgeAppearance
-        navigationBar.compactAppearance = compactAppearance
-    }
-}
