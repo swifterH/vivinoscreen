@@ -25,13 +25,18 @@ struct BottomHeader: View {
                 .foregroundColor(Color("lightMaize"))
                 .offset(x: 0, y: -5)
             
+            
+            
             VStack(alignment: .leading) {
                 
-                Text("Recent searches") .font(.custom("Helvetica", size: 20))
-                    .fontWeight(.regular).foregroundColor(Color("selectedTitle"))
+                
+                Text("Recent searches") .font(.custom("Helvetica", size: 18))
+                    .fontWeight(.medium).foregroundColor(Color("selectedTitle"))
                         .multilineTextAlignment(.leading)
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
-            }
+                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+               
+            }.frame(width: 348, height: 30, alignment: .leading)
+            
         }
         
     }

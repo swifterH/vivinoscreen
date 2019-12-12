@@ -12,8 +12,8 @@ struct RecentsRow: View {
     var body: some View {
         HStack {
             VStack {
-                Text("DEC").font(.footnote)
-                Text("10").font(.body)
+                Text("DEC").font(.custom("Helvetica", size: 18))
+                Text("10").font(.custom("Helvetica", size: 16)).padding(EdgeInsets(top: 2, leading: 0, bottom: 10, trailing: 0))
                 }.foregroundColor(Color("darkMaize"))
             .frame(width: 68, height: 68, alignment: .center)
             
@@ -23,6 +23,7 @@ struct RecentsRow: View {
                 Text("minPrice - MaxPrice").font(.footnote)
                 .foregroundColor(Color("selectedTitle"))
                 Text("Goes well with...").font(.footnote).foregroundColor(Color("selectedTitle"))
+                Divider()
             }.frame(width: 220, height: 60, alignment: .leading)
             .shadow(radius: 20)
             
