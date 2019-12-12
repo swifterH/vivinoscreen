@@ -17,7 +17,7 @@ struct RecentsRow: View {
                 }.foregroundColor(Color("darkMaize"))
             .frame(width: 68, height: 68, alignment: .center)
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("All wine types").foregroundColor(.black)
                     .fontWeight(.light)
                 Text("minPrice - MaxPrice").font(.footnote)

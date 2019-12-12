@@ -96,6 +96,7 @@ struct ContentView: View {
                                     .multilineTextAlignment(.leading)
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
                             }
+                            
                             RecentsRow()
                             RecentsRow()
                             RecentsRow()
