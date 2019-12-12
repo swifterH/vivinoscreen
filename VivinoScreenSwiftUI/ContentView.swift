@@ -20,7 +20,7 @@ struct ContentView: View {
             NavigationView {
                 
                 
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false) {
                     
                     
                     
@@ -61,30 +61,7 @@ struct ContentView: View {
                             
                         }
                         
-                        VStack(spacing : 1) {
-                            
-                            HStack(spacing: 1) {
-                                WineZStack()
-                                WineZStack()
-                                
-                                
-                            }
-                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                            HStack(spacing: 1) {
-                                WineZStack()
-                                WineZStack()
-                                
-                                
-                            }
-                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                            HStack(spacing: 1) {
-                                WineZStack()
-                                WineZStack()
-                                
-                                
-                            }
-                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                        }
+                        HorizontalScrollView().offset(x: -5, y: 0) //offset hacks away a current scrollview bug that adds unwanted space at the beginning.
                         
                         
                         VStack {
