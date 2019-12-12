@@ -60,29 +60,40 @@ struct ContentView: View {
                             
                             
                         }
-                        HStack {
-                            WineZStack()
-                            WineZStack()
+                        
+                        VStack(spacing : 1) {
                             
-                            
+                            HStack(spacing: 1) {
+                                WineZStack()
+                                WineZStack()
+                                
+                                
+                            }
+                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                            HStack(spacing: 1) {
+                                WineZStack()
+                                WineZStack()
+                                
+                                
+                            }
+                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                            HStack(spacing: 1) {
+                                WineZStack()
+                                WineZStack()
+                                
+                                
+                            }
+                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                         }
-                        HStack {
-                            WineZStack()
-                            WineZStack()
-                            
-                        }
-                        HStack {
-                            WineZStack()
-                            WineZStack()
-                        }
+                        
                         
                         VStack {
                             Text("More filters").font(.custom("Helvetica", size: 16))
-                            .fontWeight(.regular).foregroundColor(Color("wineColor")).padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                                .fontWeight(.regular).foregroundColor(Color("wineColor")).padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                                 .font(.subheadline)
                             
                             Text("Country, grape, vintage, etc.")
-                            .font(.custom("Helvetica", size: 12))
+                                .font(.custom("Helvetica", size: 12))
                                 .fontWeight(.regular).foregroundColor(Color("darkMaize"))
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
                             
@@ -92,9 +103,9 @@ struct ContentView: View {
                             
                             VStack() {
                                 Text("Recent searches") .font(.custom("Helvetica", size: 20))
-                                .fontWeight(.regular).foregroundColor(Color("selectedTitle"))
+                                    .fontWeight(.regular).foregroundColor(Color("selectedTitle"))
                                     .multilineTextAlignment(.leading)
-                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
+                                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
                             }
                             
                             RecentsRow()
@@ -104,11 +115,11 @@ struct ContentView: View {
                             HStack {
                                 Text("Show all").font(.custom("Helvetica", size: 12)).foregroundColor(Color.wineColor)
                                     .fontWeight(.semibold)
-                                .padding()
+                                    .padding()
                             }.frame(width: 280, height: 30, alignment: .leading)
                             
                             Rectangle().frame(width: 380, height: 100, alignment: .leading)
-                            .foregroundColor(Color("lightMaize"))
+                                .foregroundColor(Color("lightMaize"))
                         }
                         
                     }
