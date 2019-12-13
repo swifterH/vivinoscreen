@@ -13,9 +13,9 @@ struct AppView: View {
         TabView {
         
         ShopView().tabItem {
-                   Image(systemName: "cart")
-                   Text("Shop")
-               }
+                Image(systemName: "cart")
+                Text("Shop")
+            }
             
         ContentView()
         .tabItem {
@@ -25,7 +25,7 @@ struct AppView: View {
         
         CameraView()
         .tabItem {
-            Image(systemName: "camera.fill")
+            Image(systemName: "camera.fill").font(.largeTitle)
             
             }
         FriendsView()
@@ -37,6 +37,7 @@ struct AppView: View {
         ProfileView()
             .tabItem {
                 Image(systemName: "person.fill")
+                Text("Profile")
             }
       }
     }
