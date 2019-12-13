@@ -13,30 +13,30 @@ struct AppView: View {
         TabView {
         
         ShopView().tabItem {
-                Image(systemName: "cart")
+            Image(systemName: "cart").font(.system(size: 22))
                 Text("Shop")
             }
             
         ContentView()
         .tabItem {
-            Image(systemName: "magnifyingglass")
+            Image(systemName: "magnifyingglass").font(.system(size: 22))
             Text("Search")
         }
         
         CameraView()
         .tabItem {
-            Image(systemName: "camera.fill").font(.largeTitle)
+            Image(systemName: "camera.circle.fill").font(.system(size: 60))
             
             }
         FriendsView()
         .tabItem {
-                Image(systemName: "person.2.fill")
+                Image(systemName: "person.2.fill").font(.system(size: 22))
             Text("Friends")
             }
             
         ProfileView()
             .tabItem {
-                Image(systemName: "person.fill")
+                Image(systemName: "person.fill").font(.system(size: 22))
                 Text("Profile")
             }
       }

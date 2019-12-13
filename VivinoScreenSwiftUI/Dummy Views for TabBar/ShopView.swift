@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ShopView: View {
     var body: some View {
-        Text("Shopping View 🛒")
+        Text("Shopping View 🛒💳")
             .font(.largeTitle)
     }
 }

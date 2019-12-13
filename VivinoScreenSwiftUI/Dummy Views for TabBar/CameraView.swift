@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CameraView: View {
     var body: some View {
-        Text("Scanning view 📷")
+        Text("Scanning view 📷📸")
             .font(.largeTitle)
     }
 }
