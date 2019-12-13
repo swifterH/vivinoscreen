@@ -10,13 +10,19 @@ import SwiftUI
 
 struct BannerImage: View {
     var body: some View {
+    //    GeometryReader { (geometry: GeometryProxy) in
         Image("barrels").resizable()
                                   .blendMode(.plusDarker)
                                   .aspectRatio(contentMode: .fill)
                                   .edgesIgnoringSafeArea(.top)
-                                  .frame(height: 140)
-                                  //            .scaledToFill()
-                                  .clipped()
+                                  //.frame(width: geometry.size.width,height: 140)
+                                .frame(height: 140)
+        .offset(y: -200)
+            .edgesIgnoringSafeArea(.all)
+                                        //.scaledToFill()
+            
+                                 // .clipped()
+ //       }
     }
 }
 

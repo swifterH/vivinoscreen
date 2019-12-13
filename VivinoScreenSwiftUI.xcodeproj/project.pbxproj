@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C873489123A429670067A0EB /* StretchyBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873489023A429670067A0EB /* StretchyBanner.swift */; };
 		C8A3CECF239E437700EBCC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CECE239E437700EBCC7B /* AppDelegate.swift */; };
 		C8A3CED1239E437700EBCC7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CED0239E437700EBCC7B /* SceneDelegate.swift */; };
 		C8A3CED3239E437700EBCC7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CED2239E437700EBCC7B /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C873489023A429670067A0EB /* StretchyBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyBanner.swift; sourceTree = "<group>"; };
 		C8A3CECB239E437700EBCC7B /* VivinoScreenSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivinoScreenSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A3CECE239E437700EBCC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A3CED0239E437700EBCC7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				C8C8C71223A285A8001343D7 /* NavBarButtons.swift */,
 				C8C8C70E23A28190001343D7 /* BannerImage.swift */,
 				C8C8C70823A27C92001343D7 /* SegmentedPicker.swift */,
+				C873489023A429670067A0EB /* StretchyBanner.swift */,
 				C8B6D81B23A23AE70063A736 /* HorizontalScrollView.swift */,
 				C8EE7A9223A130A1002C789D /* WineZStack.swift */,
 				C8C8C70A23A27E88001343D7 /* BottomHeader.swift */,
@@ -224,6 +227,7 @@
 				C8A3CECF239E437700EBCC7B /* AppDelegate.swift in Sources */,
 				C8A3CED1239E437700EBCC7B /* SceneDelegate.swift in Sources */,
 				C8C8C71A23A3909B001343D7 /* CameraView.swift in Sources */,
+				C873489123A429670067A0EB /* StretchyBanner.swift in Sources */,
 				C8A3CED3239E437700EBCC7B /* ContentView.swift in Sources */,
 				C8C8C71823A38FD6001343D7 /* ShopView.swift in Sources */,
 				C8C8C70923A27C92001343D7 /* SegmentedPicker.swift in Sources */,
