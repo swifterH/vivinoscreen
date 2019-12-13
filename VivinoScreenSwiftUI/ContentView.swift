@@ -16,7 +16,6 @@ struct ContentView: View {
     var body: some View {
         
         
-        TabView {
             NavigationView {
                 
                 
@@ -72,7 +71,6 @@ struct ContentView: View {
                     .font(.custom("Helvetica", size: 16))// this modifies the searchbar text
                 
             }
-        }
     }
 }
 
@@ -121,4 +119,5 @@ struct SearchView : View {
     }
 
 }
+
 

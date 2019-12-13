@@ -23,6 +23,11 @@
 		C8C8C70F23A28190001343D7 /* BannerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C70E23A28190001343D7 /* BannerImage.swift */; };
 		C8C8C71123A28272001343D7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71023A28272001343D7 /* SearchView.swift */; };
 		C8C8C71323A285A8001343D7 /* NavBarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71223A285A8001343D7 /* NavBarButtons.swift */; };
+		C8C8C71623A38E9C001343D7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71523A38E9C001343D7 /* AppView.swift */; };
+		C8C8C71823A38FD6001343D7 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71723A38FD6001343D7 /* ShopView.swift */; };
+		C8C8C71A23A3909B001343D7 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71923A3909B001343D7 /* CameraView.swift */; };
+		C8C8C71C23A390E3001343D7 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71B23A390E3001343D7 /* FriendsView.swift */; };
+		C8C8C71E23A3915A001343D7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C8C71D23A3915A001343D7 /* ProfileView.swift */; };
 		C8EE7A9123A10736002C789D /* NavigationViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */; };
 		C8EE7A9323A130A1002C789D /* WineZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE7A9223A130A1002C789D /* WineZStack.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +51,11 @@
 		C8C8C70E23A28190001343D7 /* BannerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImage.swift; sourceTree = "<group>"; };
 		C8C8C71023A28272001343D7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C8C8C71223A285A8001343D7 /* NavBarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarButtons.swift; sourceTree = "<group>"; };
+		C8C8C71523A38E9C001343D7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		C8C8C71723A38FD6001343D7 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		C8C8C71923A3909B001343D7 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C8C8C71B23A390E3001343D7 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		C8C8C71D23A3915A001343D7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewExtension.swift; sourceTree = "<group>"; };
 		C8EE7A9223A130A1002C789D /* WineZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineZStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,19 +92,20 @@
 			children = (
 				C8A3CECE239E437700EBCC7B /* AppDelegate.swift */,
 				C8A3CED0239E437700EBCC7B /* SceneDelegate.swift */,
+				C8C8C71523A38E9C001343D7 /* AppView.swift */,
 				C8A3CED2239E437700EBCC7B /* ContentView.swift */,
 				C8C8C71223A285A8001343D7 /* NavBarButtons.swift */,
-				C8C8C71023A28272001343D7 /* SearchView.swift */,
-				C8A3CF0423A00F6D00EBCC7B /* ColorExtension.swift */,
-				C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */,
-				C8EE7A9223A130A1002C789D /* WineZStack.swift */,
-				C8A3CF02239FF81100EBCC7B /* Data.swift */,
-				C8B6D81923A1A5300063A736 /* RecentsRow.swift */,
-				C8B6D81B23A23AE70063A736 /* HorizontalScrollView.swift */,
-				C8C8C70A23A27E88001343D7 /* BottomHeader.swift */,
-				C8C8C70823A27C92001343D7 /* SegmentedPicker.swift */,
 				C8C8C70E23A28190001343D7 /* BannerImage.swift */,
+				C8C8C70823A27C92001343D7 /* SegmentedPicker.swift */,
+				C8B6D81B23A23AE70063A736 /* HorizontalScrollView.swift */,
+				C8EE7A9223A130A1002C789D /* WineZStack.swift */,
+				C8C8C70A23A27E88001343D7 /* BottomHeader.swift */,
+				C8B6D81923A1A5300063A736 /* RecentsRow.swift */,
 				C8C8C70C23A27FC8001343D7 /* ShowAllRow.swift */,
+				C8C8C71423A38E39001343D7 /* Helpers */,
+				C8C8C71F23A391A0001343D7 /* Dummy Views for TabBar */,
+				C8A3CF02239FF81100EBCC7B /* Data.swift */,
+				C8C8C71023A28272001343D7 /* SearchView.swift */,
 				C8A3CED4239E437800EBCC7B /* Assets.xcassets */,
 				C8A3CED9239E437800EBCC7B /* LaunchScreen.storyboard */,
 				C8A3CEDC239E437800EBCC7B /* Info.plist */,
@@ -109,6 +120,26 @@
 				C8A3CED7239E437800EBCC7B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8C8C71423A38E39001343D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C8A3CF0423A00F6D00EBCC7B /* ColorExtension.swift */,
+				C8EE7A9023A10736002C789D /* NavigationViewExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C8C8C71F23A391A0001343D7 /* Dummy Views for TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C8C8C71723A38FD6001343D7 /* ShopView.swift */,
+				C8C8C71923A3909B001343D7 /* CameraView.swift */,
+				C8C8C71B23A390E3001343D7 /* FriendsView.swift */,
+				C8C8C71D23A3915A001343D7 /* ProfileView.swift */,
+			);
+			path = "Dummy Views for TabBar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,14 +213,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C8C71C23A390E3001343D7 /* FriendsView.swift in Sources */,
+				C8C8C71E23A3915A001343D7 /* ProfileView.swift in Sources */,
 				C8C8C70B23A27E88001343D7 /* BottomHeader.swift in Sources */,
 				C8C8C70D23A27FC8001343D7 /* ShowAllRow.swift in Sources */,
 				C8C8C70F23A28190001343D7 /* BannerImage.swift in Sources */,
 				C8C8C71323A285A8001343D7 /* NavBarButtons.swift in Sources */,
+				C8C8C71623A38E9C001343D7 /* AppView.swift in Sources */,
 				C8EE7A9123A10736002C789D /* NavigationViewExtension.swift in Sources */,
 				C8A3CECF239E437700EBCC7B /* AppDelegate.swift in Sources */,
 				C8A3CED1239E437700EBCC7B /* SceneDelegate.swift in Sources */,
+				C8C8C71A23A3909B001343D7 /* CameraView.swift in Sources */,
 				C8A3CED3239E437700EBCC7B /* ContentView.swift in Sources */,
+				C8C8C71823A38FD6001343D7 /* ShopView.swift in Sources */,
 				C8C8C70923A27C92001343D7 /* SegmentedPicker.swift in Sources */,
 				C8EE7A9323A130A1002C789D /* WineZStack.swift in Sources */,
 				C8B6D81C23A23AE70063A736 /* HorizontalScrollView.swift in Sources */,
