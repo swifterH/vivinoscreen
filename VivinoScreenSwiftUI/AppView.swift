@@ -9,8 +9,13 @@
 import SwiftUI
 
 struct AppView: View {
+    @State private var selection = 1
+    
+    init() {
+        UITabBar.appearance().barTintColor = UIColor.red
+       }
     var body: some View {
-        TabView {
+        TabView (selection:$selection) {
         
         ShopView().tabItem {
             Image(systemName: "cart").font(.system(size: 22))
@@ -25,7 +30,7 @@ struct AppView: View {
         
         CameraView()
         .tabItem {
-            Image(systemName: "camera.circle.fill").font(.system(size: 60))
+            Image(systemName: "camera.circle.fill").font(.system(size: 58))
             
             }
         FriendsView()
@@ -40,6 +45,7 @@ struct AppView: View {
                 Text("Profile")
             }
       }
+        .accentColor(.white)
     }
   }
     struct AppView_Previews: PreviewProvider {
