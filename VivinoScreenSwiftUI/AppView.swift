@@ -9,27 +9,26 @@
 import SwiftUI
 
 struct AppView: View {
-    @State private var selection = 1
+    //@State private var selection = 1
     
     init() {
-        UITabBar.appearance().barTintColor = UIColor.red
+        UITabBar.appearance().barTintColor = UIColor.systemPink
        }
     var body: some View {
-        TabView (selection:$selection) {
+       // TabView (selection:$selection) {
+         TabView () {
         
         ShopView().tabItem {
             Image(systemName: "cart").font(.system(size: 22))
                 Text("Shop")
             }
             
-        ContentView()
-        .tabItem {
+        ContentView().tabItem {
             Image(systemName: "magnifyingglass").font(.system(size: 22))
             Text("Search")
         }
         
-        CameraView()
-        .tabItem {
+        CameraView().tabItem {
             Image(systemName: "camera.circle.fill").font(.system(size: 58))
             
             }
