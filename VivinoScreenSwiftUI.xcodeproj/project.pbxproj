@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C873489123A429670067A0EB /* StretchyBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873489023A429670067A0EB /* StretchyBanner.swift */; };
+		C87348AB23A76ECA0067A0EB /* CombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87348AA23A76ECA0067A0EB /* CombineView.swift */; };
+		C87348AD23A76F500067A0EB /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87348AC23A76F500067A0EB /* ImageRow.swift */; };
 		C8A3CECF239E437700EBCC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CECE239E437700EBCC7B /* AppDelegate.swift */; };
 		C8A3CED1239E437700EBCC7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CED0239E437700EBCC7B /* SceneDelegate.swift */; };
 		C8A3CED3239E437700EBCC7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3CED2239E437700EBCC7B /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		C873489023A429670067A0EB /* StretchyBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyBanner.swift; sourceTree = "<group>"; };
+		C87348AA23A76ECA0067A0EB /* CombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineView.swift; sourceTree = "<group>"; };
+		C87348AC23A76F500067A0EB /* ImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
 		C8A3CECB239E437700EBCC7B /* VivinoScreenSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivinoScreenSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A3CECE239E437700EBCC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A3CED0239E437700EBCC7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				C8C8C70A23A27E88001343D7 /* BottomHeader.swift */,
 				C8B6D81923A1A5300063A736 /* RecentsRow.swift */,
 				C8C8C70C23A27FC8001343D7 /* ShowAllRow.swift */,
+				C87348AA23A76ECA0067A0EB /* CombineView.swift */,
+				C87348AC23A76F500067A0EB /* ImageRow.swift */,
 				C8C8C71423A38E39001343D7 /* Helpers */,
 				C8C8C71F23A391A0001343D7 /* Dummy Views for TabBar */,
 				C8A3CF02239FF81100EBCC7B /* Data.swift */,
@@ -219,11 +225,13 @@
 				C8C8C71C23A390E3001343D7 /* FriendsView.swift in Sources */,
 				C8C8C71E23A3915A001343D7 /* ProfileView.swift in Sources */,
 				C8C8C70B23A27E88001343D7 /* BottomHeader.swift in Sources */,
+				C87348AD23A76F500067A0EB /* ImageRow.swift in Sources */,
 				C8C8C70D23A27FC8001343D7 /* ShowAllRow.swift in Sources */,
 				C8C8C70F23A28190001343D7 /* BannerImage.swift in Sources */,
 				C8C8C71323A285A8001343D7 /* NavBarButtons.swift in Sources */,
 				C8C8C71623A38E9C001343D7 /* AppView.swift in Sources */,
 				C8EE7A9123A10736002C789D /* NavigationViewExtension.swift in Sources */,
+				C87348AB23A76ECA0067A0EB /* CombineView.swift in Sources */,
 				C8A3CECF239E437700EBCC7B /* AppDelegate.swift in Sources */,
 				C8A3CED1239E437700EBCC7B /* SceneDelegate.swift in Sources */,
 				C8C8C71A23A3909B001343D7 /* CameraView.swift in Sources */,
